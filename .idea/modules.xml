@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/Kaku.iml" filepath="$PROJECT_DIR$/.idea/modules/Kaku.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Kaku.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Kaku.app.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Kaku.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Kaku.app.androidTest.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Kaku.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Kaku.app.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Kaku.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Kaku.app.unitTest.iml" />
