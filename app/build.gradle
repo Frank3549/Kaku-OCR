@@ -7,7 +7,7 @@ apply plugin: 'kotlin-android'
 
 android {
 
-    compileSdkVersion 31
+    compileSdkVersion 34
 
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
@@ -18,7 +18,7 @@ android {
     defaultConfig {
         applicationId "ca.fuwafuwa.kaku"
         minSdkVersion 21
-        targetSdkVersion 31
+        targetSdkVersion 34
         versionCode 78
         versionName "$versionPrefix.$versionCode"
     }

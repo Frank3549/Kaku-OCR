@@ -223,7 +223,7 @@ public abstract class Window implements Stoppable, WindowListener {
      * See {@link #onTouch}
      */
     @Override
-    public boolean onScroll(MotionEvent e1, MotionEvent e2, float distanceX, float distanceY) {
+    protected boolean onScroll(MotionEvent e1, MotionEvent e2, float distanceX, float distanceY) {
 
         if (e1 == null || e2 == null){
             return false;
