@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.fuwafuwa.kaku">
+    package="com.kakutools.kaku">
 
     <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
@@ -21,14 +21,14 @@
             android:name="com.google.android.gms.ads.APPLICATION_ID"
             android:value="@string/ads_app_id" />
 
-        <receiver android:name="com.fuwafuwa.kaku.MainService$CloseMainService" />
-        <receiver android:name="com.fuwafuwa.kaku.MainService$TogglePageModeMainService" />
-        <receiver android:name="com.fuwafuwa.kaku.MainService$ToggleInstantModeMainService" />
-        <receiver android:name="com.fuwafuwa.kaku.MainService$ToggleImagePreviewMainService" />
-        <receiver android:name="com.fuwafuwa.kaku.MainService$ToggleShowHideMainService" />
+        <receiver android:name="com.kakutools.kaku.MainService$CloseMainService" />
+        <receiver android:name="com.kakutools.kaku.MainService$TogglePageModeMainService" />
+        <receiver android:name="com.kakutools.kaku.MainService$ToggleInstantModeMainService" />
+        <receiver android:name="com.kakutools.kaku.MainService$ToggleImagePreviewMainService" />
+        <receiver android:name="com.kakutools.kaku.MainService$ToggleShowHideMainService" />
 
         <activity
-            android:name="com.fuwafuwa.kaku.MainActivity"
+            android:name="com.kakutools.kaku.MainActivity"
             android:label="Kaku"
             android:noHistory="false"
             android:launchMode="standard"
@@ -40,7 +40,7 @@
             </intent-filter>
         </activity>
 
-        <activity android:name="com.fuwafuwa.kaku.BetaActivity"
+        <activity android:name="com.kakutools.kaku.BetaActivity"
             android:label="Kaku Beta"
             android:noHistory="false"
             android:launchMode="standard"
@@ -48,7 +48,7 @@
         </activity>
 
         <activity
-            android:name="com.fuwafuwa.kaku.TutorialActivity"
+            android:name="com.kakutools.kaku.TutorialActivity"
             android:label="Kaku Tutorial"
             android:noHistory="false"
             android:launchMode="standard"
@@ -56,7 +56,7 @@
         </activity>
 
         <activity
-            android:name="com.fuwafuwa.kaku.PassthroughActivity"
+            android:name="com.kakutools.kaku.PassthroughActivity"
             android:label="Kaku"
             android:launchMode="singleInstance"
             android:noHistory="true"
@@ -74,7 +74,7 @@
         </activity>
 
         <service
-            android:name="com.fuwafuwa.kaku.MainService"
+            android:name="com.kakutools.kaku.MainService"
             android:foregroundServiceType="mediaProjection"
             android:exported="true" />
     </application>

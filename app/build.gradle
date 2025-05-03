@@ -16,7 +16,7 @@ android {
 
     def versionPrefix = "1.3"
     defaultConfig {
-        applicationId "com.fuwafuwa.kaku"
+        applicationId "com.kakutools.kaku"
         minSdkVersion 21
         targetSdkVersion 34
         versionCode 78
