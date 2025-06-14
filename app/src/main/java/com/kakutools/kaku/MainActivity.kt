@@ -14,6 +14,7 @@ import android.util.Log
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.kakutools.kaku.Dialogs.StarRatingDialogFragment
+import android.content.pm.PackageManager
 
 
 class MainActivity : AppCompatActivity()
@@ -45,6 +46,7 @@ class MainActivity : AppCompatActivity()
             setContentView(R.layout.activity_main)
 
             setupKakuDatabasesAndFiles(this)
+            requestNotificationPermissionIfNeeded()
         }
     }
 
@@ -74,6 +76,7 @@ class MainActivity : AppCompatActivity()
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?)
     {
+        super.onActivityResult(requestCode, resultCode, data)
         Log.d(TAG, "onActivityResult")
 
         val relaunchAppText = "Relaunch Kaku after verifying permission"
@@ -194,6 +197,15 @@ class MainActivity : AppCompatActivity()
     {
         val CURRENT_PROD_VERSION = 73 // just hardcoded, change when a build is ready to be rolled out to prod
         return BuildConfig.VERSION_CODE > CURRENT_PROD_VERSION
+    }
+
+    private fun requestNotificationPermissionIfNeeded() {
+        //TIRAMISU = Android 13
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
+            if (checkSelfPermission(android.Manifest.permission.POST_NOTIFICATIONS) != PackageManager.PERMISSION_GRANTED) {
+                requestPermissions(arrayOf(android.Manifest.permission.POST_NOTIFICATIONS), 1010)
+            }
+        }
     }
 
     companion object
